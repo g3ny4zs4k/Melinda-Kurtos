@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menü – Melinda Kürtős | Kürtőskalács, lángos, fánk árak Sepsiszentgyörgyön</title>
+    <meta name="description" content="Melinda Kürtős teljes kínálata: kürtőskalács 8 ízben, lángos 5 feltéttel, fánk 3 ízben. Tekintsd meg az árainkat és rendelj online!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.0/css/flag-icons.min.css" />
+</head>
+<body>
+
+    <!-- TICKER -->
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/emoji.svg" alt="🔥" class="noto-emoji" width="20" height="20" aria-hidden="true"> Frissen sütve</span><span>⭐ Hagyományos recept</span><span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f33e/emoji.svg" alt="🌾" class="noto-emoji" width="20" height="20" aria-hidden="true"> Friss alapanyagok</span><span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f389/emoji.svg" alt="🎉" class="noto-emoji" width="20" height="20" aria-hidden="true"> Rendelj online!</span><span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60b/emoji.svg" alt="😋" class="noto-emoji" width="20" height="20" aria-hidden="true"> Kürtős • Lángos • Fánk</span>
+            <span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/emoji.svg" alt="🔥" class="noto-emoji" width="20" height="20" aria-hidden="true"> Frissen sütve</span><span>⭐ Hagyományos recept</span><span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f33e/emoji.svg" alt="🌾" class="noto-emoji" width="20" height="20" aria-hidden="true"> Friss alapanyagok</span><span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f389/emoji.svg" alt="🎉" class="noto-emoji" width="20" height="20" aria-hidden="true"> Rendelj online!</span><span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60b/emoji.svg" alt="😋" class="noto-emoji" width="20" height="20" aria-hidden="true"> Kürtős • Lángos • Fánk</span>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <a href="index.html" class="logo" aria-label="Melinda Kürtős főoldal">
+            <img src="images/logo.webp" alt="Melinda Kürtős logó" class="logo-img">
+        </a>
+        <ul class="nav-links" id="nav-links" role="navigation">
+            <li><a href="index.html" class="lang-text" data-hu="Kezdőlap" data-ro="Acasă" data-en="Home">Kezdőlap</a></li>
+            <li><a href="menu.html" class="lang-text" data-hu="Menü" data-ro="Meniu" data-en="Menu">Menü</a></li>
+            <li><a href="index.html#rendeles" class="lang-text" data-hu="Rendelés" data-ro="Comandă" data-en="Order">Rendelés</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn" id="current-lang-btn" aria-label="Nyelvválasztó">
+                    <span class="fi fi-hu" id="current-lang-flag"></span>
+                </button>
+                <div class="lang-dropdown-content" role="menu">
+                    <a href="#" onclick="changeLang('hu','fi-hu'); return false;"><span class="fi fi-hu"></span> HU</a>
+                    <a href="#" onclick="changeLang('ro','fi-ro'); return false;"><span class="fi fi-ro"></span> RO</a>
+                    <a href="#" onclick="changeLang('en','fi-gb'); return false;"><span class="fi fi-gb"></span> EN</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menü megnyitása" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+        <div class="page-hero-blob" aria-hidden="true"></div>
+        <div class="container">
+            <span class="label-pill lang-text" data-hu="Amit kínálunk" data-ro="Ce oferim" data-en="What we offer">Amit kínálunk</span>
+            <h1 class="page-hero-title lang-text" data-hu="Kínálatunk 🍽️" data-ro="Oferta Noastră 🍽️" data-en="Our Menu 🍽️">Kínálatunk <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f37d_fe0f/emoji.svg" alt="🍽️" class="noto-emoji" width="20" height="20" aria-hidden="true"></h1>
+        </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs-bar">
+        <div class="container">
+            <div class="tabs" role="tablist">
+                <button class="tab active" data-target="kurtos" role="tab" aria-selected="true">
+                    <img src="images/emoji-kurtos.webp" alt="" class="tab-emoji" width="24" height="24" aria-hidden="true"> <span class="lang-text" data-hu="Kürtőskalács" data-ro="Colac" data-en="Chimney Cake">Kürtőskalács</span>
+                </button>
+                <button class="tab" data-target="langos" role="tab" aria-selected="false">
+                    <img src="images/emoji-langos.webp" alt="" class="tab-emoji" width="24" height="24" aria-hidden="true"> Lángos
+                </button>
+                <button class="tab" data-target="fank" role="tab" aria-selected="false">
+                    <img src="images/emoji-fank.webp" alt="" class="tab-emoji" width="24" height="24" aria-hidden="true"> <span class="lang-text" data-hu="Fánk" data-ro="Gogoși" data-en="Donuts">Fánk</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="menu-page container">
+
+        <!-- KÜRTŐS -->
+        <section id="kurtos" class="menu-section">
+            <div class="cat-header">
+                <h2 class="lang-text" data-hu='Kürtőskalács' data-ro='Colac Secuiesc' data-en='Chimney Cake'>Kürtőskalács <img src="images/emoji-kurtos.webp" alt="" class="heading-emoji" aria-hidden="true"></h2>
+                <p class="lang-text" data-hu="Ropogós kívül, puha belül – hagyományos recept alapján" data-ro="Crocant pe dinafară, moale pe dinăuntru" data-en="Crispy outside, soft inside – traditional recipe">Ropogós kívül, puha belül – hagyományos recept alapján</p>
+            </div>
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/kurtos-cukros.webp" alt="Cukros kürtőskalács – klasszikus vaníliás bevonattal, Melinda Kürtős Sepsiszentgyörgy" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Cukros Kürtős" data-ro="Colac cu Zahăr" data-en="Sugar Chimney Cake">Cukros Kürtős</h3>
+                        <p class="card-weight">400g / 200g</p>
+                        <p class="card-price">25 lei / 15 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/kurtos-dios.webp" alt="Diós kürtőskalács – darált dióval megszórt friss kürtős, Melinda Kürtős" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Diós Kürtős" data-ro="Colac cu Nucă" data-en="Walnut Chimney Cake">Diós Kürtős</h3>
+                        <p class="card-weight">400g / 200g</p>
+                        <p class="card-price">25 lei / 15 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/kurtos-fahejas.webp" alt="Fahéjas kürtőskalács – illatos fahéjas cukorral bevont kürtős Sepsiszentgyörgyön" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Fahéjas Kürtős" data-ro="Colac cu Scorțișoară" data-en="Cinnamon Chimney Cake">Fahéjas Kürtős</h3>
+                        <p class="card-weight">400g / 200g</p>
+                        <p class="card-price">25 lei / 15 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/kurtos-szezammagos.webp" alt="Szezámmagos kürtőskalács – ropogós szezámmaggal díszített különlegesség" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Szezámmagos Kürtős" data-ro="Colac cu Susan" data-en="Sesame Chimney Cake">Szezámmagos Kürtős</h3>
+                        <p class="card-weight">400g / 200g</p>
+                        <p class="card-price">25 lei / 15 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/kurtos-kakaos.webp" alt="Kakaós kürtőskalács – étcsokoládés kakaóporral szórt friss kürtős" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Kakaós Kürtős" data-ro="Colac cu Cacao" data-en="Cocoa Chimney Cake">Kakaós Kürtős</h3>
+                        <p class="card-weight">400g / 200g</p>
+                        <p class="card-price">25 lei / 15 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/kurtos-kokuszos.webp" alt="Kókuszos kürtőskalács – reszeltkókusszal bevont exotikus ízű kürtős" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Kókuszos Kürtős" data-ro="Colac cu Cocos" data-en="Coconut Chimney Cake">Kókuszos Kürtős</h3>
+                        <p class="card-weight">400g / 200g</p>
+                        <p class="card-price">25 lei / 15 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card special">
+                    <div class="special-badge lang-text" data-hu="★ Különlegesség" data-ro="★ Specialitate" data-en="★ Special">★ Különlegesség</div>
+                    <div class="card-img"><img src="images/kurtos-raclette.webp" alt="Raclette sajtos kürtőskalács – olvasztott raclette sajttal töltött sós kürtős" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Raclette Sajtos Kürtős" data-ro="Colac cu Brânză Raclette" data-en="Raclette Cheese Chimney Cake">Raclette Sajtos Kürtős</h3>
+                        <p class="card-weight">400g</p>
+                        <p class="card-price">30 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card special">
+                    <div class="special-badge lang-text" data-hu="★ Különlegesség" data-ro="★ Specialitate" data-en="★ Special">★ Különlegesség</div>
+                    <div class="card-img"><img src="images/kurtos-malnas.webp" alt="Málnás kürtőskalács – friss málnás öntettel díszített különleges kürtős" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Málnás Kürtős" data-ro="Colac cu Zmeură" data-en="Raspberry Chimney Cake">Málnás Kürtős</h3>
+                        <p class="card-weight">400g</p>
+                        <p class="card-price">30 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card special">
+                    <div class="special-badge lang-text" data-hu="★ Különlegesség" data-ro="★ Specialitate" data-en="★ Special">★ Különlegesség</div>
+                    <div class="card-img"><img src="images/epres.webp" alt="Epres kürtőskalács – friss eper darbkákkal díszített különleges kürtős" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Epres Kürtős" data-ro="Colac cu Căpșuni " data-en="Strawberry Chimney Cake">Málnás Kürtős</h3>
+                        <p class="card-weight">400g</p>
+                        <p class="card-price">30 lei</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LÁNGOS -->
+        <section id="langos" class="menu-section hidden">
+            <div class="cat-header">
+                <h2>Lángos <img src="images/emoji-langos.webp" alt="" class="heading-emoji" aria-hidden="true"></h2>
+                <p class="lang-text" data-hu="Frissen sütve, ropogósan tálalva" data-ro="Prăjit proaspăt, servit crocant" data-en="Freshly fried, served crispy">Frissen sütve, ropogósan tálalva</p>
+            </div>
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/langos-sajtos-tejfolos.webp" alt="Sajtos tejfölös fokhagymás lángos – klasszikus magyar street food Sepsiszentgyörgyön" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Sajtos tejfölös Lángos" data-ro="Langoș cu Brânză și Smântână" data-en="Cheese & Sour Cream Lángos">Sajtos tejfölös Lángos</h3>
+                        <p class="card-weight lang-text" data-hu="fokhagymával, 180g" data-ro="cu usturoi, 180g" data-en="with garlic, 180g">fokhagymával, 180g</p>
+                        <p class="card-price">20 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/langos-sonkas.webp" alt="Sonkás lángos – sonkával és sajttal töltött ropogós lángos" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Sonkás Lángos" data-ro="Langoș cu Șuncă" data-en="Ham Lángos">Sonkás Lángos</h3>
+                        <p class="card-weight">180g</p>
+                        <p class="card-price">25 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/langos-retro.webp" alt="Retro lángos – a klasszikus eredeti lángos receptje Melinda Kürtősnél" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Retro Lángos" data-ro="Langoș Retro" data-en="Retro Lángos">Retro Lángos</h3>
+                        <p class="card-weight">180g</p>
+                        <p class="card-price">25 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/langos-csokis.webp" alt="Csokis lángos – csokoládéöntettel és porcukorral szórt édes lángos" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Csokis Lángos" data-ro="Langoș cu Ciocolată" data-en="Chocolate Lángos">Csokis Lángos</h3>
+                        <p class="card-weight">180g</p>
+                        <p class="card-price">20 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/langos-lekvaros.webp" alt="Lekváros lángos – házi lekvárral megkent édes ropogós lángos" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Lekváros Lángos" data-ro="Langoș cu Gem" data-en="Jam Lángos">Lekváros Lángos</h3>
+                        <p class="card-weight">180g</p>
+                        <p class="card-price">20 lei</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FÁNK -->
+        <section id="fank" class="menu-section hidden">
+            <div class="cat-header">
+                <h2 class="lang-text" data-hu='Fánk' data-ro='Gogoși' data-en='Donuts'>Fánk <img src="images/emoji-fank.webp" alt="" class="heading-emoji" aria-hidden="true"></h2>
+                <p class="lang-text" data-hu="Könnyű, puha, isteni – minden darab egyedi szeretettel" data-ro="Ușor, pufos, divin" data-en="Light, fluffy, divine">Könnyű, puha, isteni – minden darab egyedi szeretettel</p>
+            </div>
+            <div class="menu-grid">
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/fank-cukros.webp" alt="Cukros fánk – porcukorral szórt puha házi fánk Melinda Kürtősnél" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Cukros Fánk" data-ro="Gogoașă cu Zahăr" data-en="Sugar Donut">Cukros Fánk</h3>
+                        <p class="card-weight lang-text" data-hu="1 db" data-ro="1 buc" data-en="1 pc">1 db</p>
+                        <p class="card-price">2 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/fank-csokis.webp" alt="Csokis fánk – csokoládémázzal bevont friss házi fánk" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Csokis Fánk" data-ro="Gogoașă cu Ciocolată" data-en="Chocolate Donut">Csokis Fánk</h3>
+                        <p class="card-weight lang-text" data-hu="1 db" data-ro="1 buc" data-en="1 pc">1 db</p>
+                        <p class="card-price">2.5 lei</p>
+                    </div>
+                </div>
+
+                <div class="menu-card">
+                    <div class="card-img"><img src="images/fank-lekvaros.webp" alt="Lekváros fánk – lekvárral töltött puha sütemény Melinda Kürtős kínálatából" loading="lazy" width="380" height="260"></div>
+                    <div class="card-body">
+                        <h3 class="lang-text" data-hu="Lekváros Fánk" data-ro="Gogoașă cu Gem" data-en="Jam Donut">Lekváros Fánk</h3>
+                        <p class="card-weight lang-text" data-hu="1 db" data-ro="1 buc" data-en="1 pc">1 db</p>
+                        <p class="card-price">2.5 lei</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- CTA STRIP -->
+    <div class="cta-strip">
+        <div class="container cta-inner">
+            <p class="lang-text" data-hu="Megtetszett valami? Rendelj most! 🛒" data-ro="Ți-a plăcut ceva? Comandă acum! 🛒" data-en="Like something? Order now! 🛒">Megtetszett valami? Rendelj most! <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6d2/emoji.svg" alt="🛒" class="noto-emoji" width="20" height="20" aria-hidden="true"></p>
+            <a href="https://ospatarul.ro/restaurant/sfantu-gheorghe/melinda-kurtos" target="_blank" class="btn-primary lang-text" data-hu="Rendelés Leadása" data-ro="Plasează Comanda" data-en="Place Order">Rendelés Leadása</a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/logo.webp" alt="Melinda Kürtős logó" class="logo-img small">
+                <p class="lang-text" data-hu="Hagyomány és íz egy helyen." data-ro="Tradiție și gust într-un singur loc." data-en="Tradition and taste in one place.">Hagyomány és íz egy helyen.</p>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:+40729250922">+40 729 250 922</a>
+                <a href="mailto:melindakurtoskalacs@gmail.com">melindakurtoskalacs@gmail.com</a>
+                <a href="https://www.facebook.com/share/17McaTXAk7/" target="_blank" rel="noopener" class="lang-text" data-hu="Facebook oldalunk" data-ro="Pagina noastră de Facebook" data-en="Our Facebook page">Facebook oldalunk</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

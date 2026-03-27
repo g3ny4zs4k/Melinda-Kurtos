@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melinda Kürtős – Friss kürtőskalács, lángos és fánk Sepsiszentgyörgyön</title>
+    <meta name="description" content="Melinda Kürtős: hagyományos recept alapján készített friss kürtőskalács, lángos és fánk Sepsiszentgyörgyön. Rendelj online gyorsan és egyszerűen!">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.webp">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.webp">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.webp">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.0/css/flag-icons.min.css" />
+</head>
+<body>
+
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span>Frissen sütve</span><span>Hagyományos recept</span><span>Friss alapanyagok</span><span>Rendelj online!</span><span>Kürtős • Lángos • Fánk</span>
+            <span>Frissen sütve</span><span>Hagyományos recept</span><span>Friss alapanyagok</span><span>Rendelj online!</span><span>Kürtős • Lángos • Fánk</span>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <a href="index.html" class="logo" aria-label="Melinda Kürtős főoldal">
+            <img src="images/logo.webp" alt="Melinda Kürtős logó" class="logo-img">
+        </a>
+        <ul class="nav-links" id="nav-links" role="navigation">
+            <li><a href="index.html" class="lang-text" data-hu="Kezdőlap" data-ro="Acasă" data-en="Home">Kezdőlap</a></li>
+            <li><a href="menu.html" class="lang-text" data-hu="Menü" data-ro="Meniu" data-en="Menu">Menü</a></li>
+            <li><a href="#rendeles" class="lang-text" data-hu="Rendelés" data-ro="Comandă" data-en="Order">Rendelés</a></li>
+        </ul>
+        <div class="nav-right">
+            <div class="lang-dropdown">
+                <button class="lang-dropbtn" id="current-lang-btn" aria-label="Nyelvválasztó">
+                    <span class="fi fi-hu" id="current-lang-flag"></span>
+                </button>
+                <div class="lang-dropdown-content" role="menu">
+                    <a href="#" onclick="changeLang('hu','fi-hu'); return false;"><span class="fi fi-hu"></span> HU</a>
+                    <a href="#" onclick="changeLang('ro','fi-ro'); return false;"><span class="fi fi-ro"></span> RO</a>
+                    <a href="#" onclick="changeLang('en','fi-gb'); return false;"><span class="fi fi-gb"></span> EN</a>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Menü megnyitása" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="blob blob-1" aria-hidden="true"></div>
+        <div class="blob blob-2" aria-hidden="true"></div>
+        <div class="blob blob-3" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/emoji.svg" alt="✨" class="noto-emoji" width="20" height="20" aria-hidden="true"></span>
+                    <span class="lang-text" data-hu="Minden nap frissen sütve!" data-ro="Proaspăt copt în fiecare zi!" data-en="Fresh baked every day!">Minden nap frissen sütve!</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-line-1">MELINDA</span>
+                    <span class="hero-line-2">KÜRTŐS</span>
+                </h1>
+                <p class="hero-desc lang-text"
+                   data-hu="A legjobb kürtős, lángos és fánk a városban. 🤤 🤤"
+                   data-ro="Cel mai bun colac, langoș și gogoașă din oraș."
+                   data-en="The best chimney cake, lángos and donuts in town.">
+                   A legjobb kürtős, lángos és fánk a városban. <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f924/emoji.svg" alt="🤤" class="noto-emoji" width="20" height="20" aria-hidden="true">
+                </p>
+                <div class="hero-btns">
+                    <a href="menu.html" class="btn-outline lang-text" data-hu="Nézd a menüt 👀" data-ro="Vezi Meniul 👀" data-en="See Menu 👀">Nézd a menüt <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/emoji.svg" alt="👀" class="noto-emoji" width="20" height="20" aria-hidden="true"></a>
+                    <a href="#rendeles" class="btn-primary lang-text" data-hu="Rendelj Most 🛒" data-ro="Comandă Acum 🛒" data-en="Order Now 🛒">Rendelj Most <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6d2/emoji.svg" alt="🛒" class="noto-emoji" width="20" height="20" aria-hidden="true"></a>
+                </div>
+                <div class="hero-pills">
+                    <div class="stat-pill">
+                        <span class="pill-num">8+</span>
+                        <span class="lang-text" data-hu="kürtős íz" data-ro="arome" data-en="flavors">kürtős íz</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="pill-num"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/emoji.svg" alt="🔥" class="noto-emoji" width="20" height="20" aria-hidden="true"></span>
+                        <span class="lang-text" data-hu="friss" data-ro="proaspăt" data-en="fresh">friss</span>
+                    </div>
+                    <div class="stat-pill">
+                        <span class="pill-num">25</span>
+                        <span class="lang-text" data-hu="leitől" data-ro="lei" data-en="lei">leitől</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-img-area">
+                <div class="hero-img-ring" aria-hidden="true"></div>
+                <img
+                    src="images/kurtos-hero.webp"
+                    alt="Melinda Kürtős – frissen sült, ropogós kürtőskalács Sepsiszentgyörgyön, hagyományos recept alapján"
+                    class="hero-img"
+                    loading="eager" width="500" height="500">
+                <div class="sticker sticker-1" aria-hidden="true"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60d/emoji.svg" alt="😍" class="noto-emoji" width="20" height="20" aria-hidden="true"> Finom!</div>
+                <div class="sticker sticker-2" aria-hidden="true">⭐⭐⭐⭐⭐</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cat-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label-pill lang-text" data-hu="Amit kínálunk" data-ro="Ce oferim" data-en="What we offer">Amit kínálunk</span>
+                <h2 class="lang-text" data-hu="Válaszd a kedvenced! 🍩" data-ro="Alege-ți preferatul! 🍩" data-en="Pick your favorite! 🍩">Válaszd a kedvenced! <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f369/emoji.svg" alt="🍩" class="noto-emoji" width="20" height="20" aria-hidden="true"></h2>
+            </div>
+            <div class="cat-grid">
+                <a href="menu.html#kurtos" class="cat-card cat-orange">
+                    <div class="cat-img-wrap">
+                        <img src="images/kurtos-menu.webp"
+                             alt="Ropogós fahéjas kürtőskalács – Melinda Kürtős Sepsiszentgyörgy"
+                             loading="lazy" width="400" height="240">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="lang-text" data-hu="Kürtőskalács" data-ro="Colac Secuiesc" data-en="Chimney Cake">Kürtőskalács</h3>
+                        <p class="lang-text" data-hu="8 féle ízben • 25 leitől" data-ro="8 arome • de la 25 lei" data-en="8 flavors • from 25 lei">8 féle ízben • 25 leitől</p>
+                        <div class="cat-arrow">→</div>
+                    </div>
+                </a>
+                <a href="menu.html#langos" class="cat-card cat-yellow">
+                    <div class="cat-img-wrap">
+                        <img src="images/langos-sajtos-tejfolos.webp"
+                             alt="Sajtos tejfölös lángos – frissen sütve, Melinda Kürtős"
+                             loading="lazy" width="400" height="240">
+                    </div>
+                    <div class="cat-info">
+                        <h3>Lángos</h3>
+                        <p class="lang-text" data-hu="5 féle feltéttel • 20 leitől" data-ro="5 toppinguri • de la 20 lei" data-en="5 toppings • from 20 lei">5 féle feltéttel • 20 leitől</p>
+                        <div class="cat-arrow">→</div>
+                    </div>
+                </a>
+                <a href="menu.html#fank" class="cat-card cat-red">
+                    <div class="cat-img-wrap">
+                        <img src="images/fank-cukros.webp"
+                             alt="Cukros fánk – puha házi fánk, Melinda Kürtős"
+                             loading="lazy" width="400" height="240">
+                    </div>
+                    <div class="cat-info">
+                        <h3 class="lang-text" data-hu="Fánk" data-ro="Gogoși" data-en="Donuts">Fánk</h3>
+                        <p class="lang-text" data-hu="3 féle ízben • 2 leitől" data-ro="3 arome • de la 2 lei" data-en="3 flavors • from 2 lei">3 féle ízben • 2 leitől</p>
+                        <div class="cat-arrow">→</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="rolunk" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-media">
+                    <div class="video-frame">
+                        <video controls autoplay muted loop playsinline preload="metadata"
+                               poster="images/rolunk-poster.webp"
+                               aria-label="Videó a Melinda Kürtős készítési folyamatáról">
+                            <source src="images/rolunk-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="media-deco" aria-hidden="true">Kézzel<br>Készítve</div>
+                </div>
+                <div class="about-text">
+                    <span class="label-pill lang-text" data-hu="A mi történetünk" data-ro="Povestea noastră" data-en="Our story">A mi történetünk</span>
+                    <h2 class="lang-text" data-hu="Rólunk 👋" data-ro="Despre Noi 👋" data-en="About Us 👋">Rólunk <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f44b/emoji.svg" alt="👋" class="noto-emoji" width="20" height="20" aria-hidden="true"></h2>
+                    <p class="lang-text"
+                        data-hu="Üdvözlünk a Melinda Kürtős oldalán! Hagyományos recept alapján, szeretettel készítjük a környék legfinomabb kürtőskalácsait, lángosait és fánkjait. Minden nap friss alapanyagokból dolgozunk, hogy a legjobb minőséget nyújtsuk nektek."
+                        data-ro="Bine ați venit la Melinda Kürtős! Pregătim cu dragoste cei mai buni colaci secuiești, langoși și gogoși din zonă, după rețete tradiționale. Lucrăm în fiecare zi cu ingrediente proaspete pentru a vă oferi cea mai bună calitate."
+                        data-en="Welcome to Melinda Kürtős! We lovingly prepare the best chimney cakes, lángos, and donuts in the area using traditional recipes. We work with fresh ingredients every day to provide you with the best quality.">
+                        Üdvözlünk a Melinda Kürtős oldalán! Hagyományos recept alapján, szeretettel készítjük a környék legfinomabb kürtőskalácsait, lángosait és fánkjait. Minden nap friss alapanyagokból dolgozunk, hogy a legjobb minőséget nyújtsuk nektek.
+                    </p>
+                    <div class="badge-row">
+                        <span class="badge lang-text" data-hu="🌾 Friss alapanyagok" data-ro="🌾 Ingrediente proaspete" data-en="🌾 Fresh ingredients"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f33e/emoji.svg" alt="🌾" class="noto-emoji" width="20" height="20" aria-hidden="true"> Friss alapanyagok</span>
+                        <span class="badge lang-text" data-hu="🏆 Hagyományos recept" data-ro="🏆 Rețetă tradițională" data-en="🏆 Traditional recipe"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f3c6/emoji.svg" alt="🏆" class="noto-emoji" width="20" height="20" aria-hidden="true"> Hagyományos recept</span>
+                        <span class="badge lang-text" data-hu="❤️ Szeretettel sütve" data-ro="❤️ Făcut cu dragoste" data-en="❤️ Made with love"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2764_fe0f/emoji.svg" alt="❤️" class="noto-emoji" width="20" height="20" aria-hidden="true"> Szeretettel sütve</span>
+                    </div>
+                    <a href="menu.html" class="btn-primary lang-text" data-hu="Nézd a kínálatunkat" data-ro="Vezi Oferta" data-en="See Our Menu">Nézd a kínálatunkat</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rendeles" class="order-section">
+        <div class="order-blob-bg" aria-hidden="true"></div>
+        <div class="container order-inner">
+            <div class="order-text">
+                <span class="label-pill light lang-text" data-hu="Online rendelés" data-ro="Comandă online" data-en="Online order">Online rendelés</span>
+                <h2 class="lang-text" data-hu="Megéhezett? 😋" data-ro="Ți-e foame? 😋" data-en="Hungry? 😋">Megéhezett? <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f60b/emoji.svg" alt="😋" class="noto-emoji" width="20" height="20" aria-hidden="true"></h2>
+                <p class="lang-text"
+                   data-hu="Kattints az alábbi gombra, és add le a rendelésed gyorsan és egyszerűen!"
+                   data-ro="Fă clic pe butonul de mai jos și plasează comanda rapid și simplu!"
+                   data-en="Click the button below and place your order quickly and easily!">
+                   Kattints az alábbi gombra, és add le a rendelésed gyorsan és egyszerűen!
+                </p>
+                <a href="https://ospatarul.ro/restaurant/sfantu-gheorghe/melinda-kurtos" target="_blank" class="btn-white lang-text"
+                   data-hu="🛒 Rendelés Leadása" data-ro="🛒 Plasează Comanda" data-en="🛒 Place Order">
+                   <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6d2/emoji.svg" alt="🛒" class="noto-emoji" width="20" height="20" aria-hidden="true"> Rendelés Leadása
+                </a>
+            </div>
+            <div class="order-floats" aria-hidden="true">
+                <img src="images/emoji-langos.webp"
+                     alt="Friss lángos – Melinda Kürtős Sepsiszentgyörgy"
+                     class="order-langos-img"
+                     loading="lazy" width="260" height="200">
+            </div>
+        </div>
+    </section>
+    <section id="vedjegy" class="about-section" style="background: var(--white);">
+        <div class="container">
+            <div class="about-grid reveal">
+                <div class="about-text">
+                    <span class="label-pill lang-text" data-hu="Hivatalos elismerés" data-ro="Recunoaștere oficială" data-en="Official recognition">Hivatalos elismerés</span>
+                    <h2 class="lang-text" data-hu="Védjegyzett Márka ®" data-ro="Marcă Înregistrată ®" data-en="Registered Trademark ®">Védjegyzett Márka ®</h2>
+                    <p class="lang-text"
+                        data-hu="Büszkék vagyunk rá, hogy a Melinda Kürtős immár hivatalosan is bejegyzett és védett márkanév az OSIM által."
+                        data-ro="Suntem mândri că Melinda Kürtős este acum o marcă înregistrată și protejată oficial (OSIM)."
+                        data-en="We are proud that Melinda Kürtős is now an officially registered and protected trademark (OSIM).">
+                        Büszkék vagyunk rá, hogy a Melinda Kürtős immár hivatalosan is bejegyzett és védett márkanév az OSIM által. 
+                    </p>
+                    <div class="badge-row">
+                        <span class="badge lang-text" data-hu="📜 Hivatalos Védjegy" data-ro="📜 Marcă Oficială" data-en="📜 Official Trademark"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4dc/emoji.svg" alt="📜" class="noto-emoji" width="20" height="20" aria-hidden="true"> Hivatalos Védjegy</span>
+                        <span class="badge lang-text" data-hu="✅ Eredeti Minőség" data-ro="✅ Calitate Originală" data-en="✅ Original Quality"><img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2705/emoji.svg" alt="✅" class="noto-emoji" width="20" height="20" aria-hidden="true"> Eredeti Minőség</span>
+                    </div>
+                </div>
+                <div class="about-media">
+                    <div style="border-radius: var(--r-lg); overflow: hidden; border: 3px solid var(--dark); box-shadow: 8px 8px 0 var(--dark); background: var(--bg);">
+                        <img src="images/osim-certificat.webp" alt="Melinda Kürtős OSIM Védjegy Tanúsítvány" loading="lazy" style="width: 100%; display: block; object-fit: contain;">
+                    </div>
+                    <div class="media-deco" aria-hidden="true" style="background: var(--white); color: var(--orange); border-color: var(--dark);">Védett<br>Márka</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nyitvatartas" class="hours-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label-pill lang-text" data-hu="Mikor találsz minket?" data-ro="Când ne găsești?" data-en="When can you find us?">Mikor találsz minket?</span>
+                <h2 class="lang-text" data-hu="Nyitvatartás 🕐" data-ro="Program 🕐" data-en="Opening Hours 🕐">Nyitvatartás <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f550/emoji.svg" alt="🕐" class="noto-emoji" width="20" height="20" aria-hidden="true"></h2>
+            </div>
+            <div class="hours-grid reveal">
+                <div class="hours-card">
+                    <div class="hours-day-group">
+                        <div class="hours-row open">
+                            <div class="hours-day">
+                                <span class="day-dot open"></span>
+                                <span class="lang-text" data-hu="Hétfő – Péntek" data-ro="Luni – Vineri" data-en="Monday – Friday">Hétfő – Péntek</span>
+                            </div>
+                            <div class="hours-time">09:00 – 17:00</div>
+                        </div>
+                        <div class="hours-row open">
+                            <div class="hours-day">
+                                <span class="day-dot open"></span>
+                                <span class="lang-text" data-hu="Szombat" data-ro="Sâmbătă" data-en="Saturday">Szombat</span>
+                            </div>
+                            <div class="hours-time">09:00 – 14:00</div>
+                        </div>
+                        <div class="hours-row closed">
+                            <div class="hours-day">
+                                <span class="day-dot closed"></span>
+                                <span class="lang-text" data-hu="Vasárnap" data-ro="Duminică" data-en="Sunday">Vasárnap</span>
+                            </div>
+                            <div class="hours-time lang-text" data-hu="Zárva" data-ro="Închis" data-en="Closed">Zárva</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="terkep" class="map-section">
+        <div class="container">
+            <div class="section-intro">
+                <span class="label-pill lang-text" data-hu="Látogass meg minket" data-ro="Vizitează-ne" data-en="Visit us">Látogass meg minket</span>
+                <h2 class="lang-text" data-hu="Megtalálsz minket 📍" data-ro="Ne găsești 📍" data-en="Find us 📍">Megtalálsz minket <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f4cd/emoji.svg" alt="📍" class="noto-emoji" width="20" height="20" aria-hidden="true"></h2>
+            </div>
+            <div class="map-wrap">
+                <iframe
+                    src="https://maps.google.com/maps?q=B%C3%A1nki+Don%C3%A1th+22%2C+Sf%C3%A2ntu+Gheorghe&t=&z=17&ie=UTF8&iwloc=&output=embed"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    title="Melinda Kürtős helyszíne a térképen" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="map-card">
+                    <p><strong class="lang-text" data-hu="Sepsiszentgyörgy, Románia" data-ro="Sfântu Gheorghe, România" data-en="Sfântu Gheorghe, Romania">Sepsiszentgyörgy, Románia</strong></p>
+                    <p><a href="tel:+40123456789">+40 729 250 922</a></p>
+                    <p><a href="mailto:melindakurtoskalacs@gmail.com">melindakurtoskalacs@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="images/logo.webp" alt="Melinda Kürtős logó" class="logo-img small">
+                <p class="lang-text" data-hu="Hagyomány és íz egy helyen." data-ro="Tradiție și gust într-un singur loc." data-en="Tradition and taste in one place.">Hagyomány és íz egy helyen.</p>
+            </div>
+            <div class="footer-contact">
+                <a href="tel:+40729250922">+40 729 250 922</a>
+                <a href="mailto:melindakurtoskalacs@gmail.com">melindakurtoskalacs@gmail.com</a>
+                <a href="https://www.facebook.com/share/17McaTXAk7/" target="_blank">Facebook</a>            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
